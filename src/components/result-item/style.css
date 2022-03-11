@@ -1,0 +1,21 @@
+.result-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: rgb(140, 0, 0);
+}
+.result-item.correct {
+  color: green;
+}
+.result-sign {
+  width: 30px;
+  text-align: center;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.question {
+  flex: 1;
+  text-align: left;
+  word-break: break-word;
+  font-size: 18px;
+}
