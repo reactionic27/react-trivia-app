@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityTab rendering renders the component 1`] = `
+<div>
+  <button
+    className="create-activity-btn"
+    data-id="add-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <ForwardRef(PlusCircleFilled)
+      style={
+        Object {
+          "color": "#4994FF",
+          "fontSize": 22,
+        }
+      }
+    />
+    <span
+      className="activity-text"
+    >
+      Add new activity
+    </span>
+  </button>
+  <AddActivityModal
+    data-id="add-activity-modal"
+    setVisible={[Function]}
+    visible={false}
+  />
+  <ActivityList
+    activities={Array []}
+  />
+</div>
+`;
