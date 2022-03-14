@@ -30,10 +30,8 @@ exports[`renders the component 1`] = `
       mode="inline"
       theme="dark"
     >
-      <Divider
+      <MenuDivider
         className="custom-divider"
-        disabled={true}
-        style={Object {}}
       />
       <MenuItem
         className="custom-menu-item"
@@ -41,13 +39,10 @@ exports[`renders the component 1`] = `
       >
         Overview
       </MenuItem>
-      <Divider
+      <MenuDivider
         className="custom-divider"
-        disabled={true}
-        style={Object {}}
       />
       <MenuItemGroup
-        disabled={true}
         title="MANAGE"
       >
         <MenuItem
@@ -75,13 +70,10 @@ exports[`renders the component 1`] = `
           Support
         </MenuItem>
       </MenuItemGroup>
-      <Divider
+      <MenuDivider
         className="custom-divider"
-        disabled={true}
-        style={Object {}}
       />
       <MenuItemGroup
-        disabled={true}
         title="GET HELP"
       >
         <MenuItem
@@ -104,7 +96,7 @@ exports[`renders the component 1`] = `
         }
       }
     >
-      <Input
+      <ForwardRef
         placeholder="Search..."
         prefix={<ForwardRef(SearchOutlined) />}
         size="large"
@@ -115,7 +107,6 @@ exports[`renders the component 1`] = `
             "width": "50%",
           }
         }
-        type="text"
       />
       <div
         className="avatar-container"

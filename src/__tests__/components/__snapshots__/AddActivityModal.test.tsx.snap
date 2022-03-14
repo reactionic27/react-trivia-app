@@ -12,13 +12,11 @@ exports[`AddActivityModal rendering renders the component 1`] = `
   centered={true}
   confirmLoading={false}
   data-id="modal-container"
-  maskTransitionName="fade"
   okText="Submit"
   okType="primary"
   onCancel={[Function]}
   onOk={[Function]}
   title="Add Activity"
-  transitionName="zoom"
   visible={true}
   width={520}
 >
@@ -64,7 +62,7 @@ exports[`AddActivityModal rendering renders the component 1`] = `
         Add Task
       </Option>
     </ForwardRef(InternalSelect)>
-    <Input
+    <ForwardRef
       data-id="property-input"
       onChange={[Function]}
       placeholder="Add Property URL (optional)"
@@ -73,7 +71,6 @@ exports[`AddActivityModal rendering renders the component 1`] = `
           "width": 300,
         }
       }
-      type="text"
       value=""
     />
     <ForwardRef
