@@ -1,6 +1,6 @@
-import { ActivityState, RootState } from "../../types";
+import { QuestionState, RootState } from "../../types";
 
-const getActivityState = (state: RootState): ActivityState =>
-  state.activityState;
+const getQuestionState = (state: RootState): QuestionState =>
+  state.questionState;
 
-export default getActivityState;
+export default getQuestionState;

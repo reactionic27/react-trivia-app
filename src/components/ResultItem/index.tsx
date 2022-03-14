@@ -1,11 +1,10 @@
 import cx from "classnames";
+import { Question } from "../../types";
 import "./style.css";
 
 type Props = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  question: any;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  answer: any;
+  question: Question;
+  answer: string;
 };
 
 export const ResultItem = ({ question, answer }: Props) => {

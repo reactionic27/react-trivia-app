@@ -19,19 +19,27 @@ export type ActivityType = {
   note: string;
 };
 
-export type ActivityState = {
-  activities: ActivityType[];
+export type QuestionState = {
+  questions: Question[];
+  answers: string[];
+};
+
+export type Question = {
+  category: string;
+  type: string;
+  difficulty: string;
+  question: string;
+  correct_answer: string;
+  incorrect_answers: string[];
 };
 
 export type RootState = {
-  activityState: ActivityState;
+  questionState: QuestionState;
 };
 
 export type PayloadType = {
   type: string;
   payload: {
-    type: string;
-    url?: string;
-    note: string;
+    answer: string;
   };
 };
