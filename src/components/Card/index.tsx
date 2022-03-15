@@ -10,7 +10,9 @@ type Props = {
 
 export const QuestionCard = ({ title, handleClick }: Props) => (
   <div className={cx("question-card")}>
-    <Typography.Title level={3}>{title}</Typography.Title>
+    <Typography.Title level={3}>
+      <div dangerouslySetInnerHTML={{ __html: title }}></div>
+    </Typography.Title>
     <Button className={cx("btn-answer")} onClick={() => handleClick("True")}>
       TRUE
     </Button>

@@ -18,7 +18,10 @@ export const ResultItem = ({ question, answer }: Props) => {
       })}
     >
       <div className={cx("result-sign")}>{isCorrect ? "+" : "-"}</div>
-      <div className={cx("question")}>{question.question}</div>
+      <div
+        className={cx("question")}
+        dangerouslySetInnerHTML={{ __html: question.question }}
+      />
     </div>
   );
 };

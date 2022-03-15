@@ -23,7 +23,7 @@ export const ResultsPage = (props: RouteComponentProps) => {
 
   return (
     <div className="results-container">
-      {questions && (
+      {questions && questions.length > 0 && (
         <>
           <Typography.Title level={2}>
             You scored {getResults()} / {questions.length}
@@ -37,9 +37,11 @@ export const ResultsPage = (props: RouteComponentProps) => {
           ))}
         </>
       )}
-      <Link to="/" className="btn-play">
-        PLAY AGAIN
-      </Link>
+      <div className="button-wrapper">
+        <Link to="/" className="btn-play">
+          PLAY AGAIN
+        </Link>
+      </div>
     </div>
   );
 };
