@@ -7,7 +7,7 @@ jest.mock("react-redux", () => ({
   useDispatch: () => mockDispatch,
 }));
 
-describe("ActivityList", () => {
+describe("ResultItem", () => {
   describe("rendering", () => {
     let wrapper: ShallowWrapper;
     const mockQuestion = {

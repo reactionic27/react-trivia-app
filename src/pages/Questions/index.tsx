@@ -1,4 +1,5 @@
 import { navigate, RouteComponentProps } from "@reach/router";
+import { Typography } from "antd";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { QuestionCard } from "../../components/Card";
@@ -32,14 +33,16 @@ export const QuestionsPage = (props: RouteComponentProps) => {
     <div className="questions-container">
       {questions[currentIndex] && (
         <>
-          <h1>{questions[currentIndex].category}</h1>
+          <Typography.Title level={2}>
+            {questions[currentIndex].category}
+          </Typography.Title>
           <QuestionCard
             title={questions[currentIndex].question}
             handleClick={handleClick}
           />
-          <span className="question-index">
+          <Typography.Text className="question-index">
             {currentIndex + 1} / {questions.length}
-          </span>
+          </Typography.Text>
         </>
       )}
     </div>

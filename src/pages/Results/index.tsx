@@ -1,4 +1,5 @@
 import { Link, RouteComponentProps } from "@reach/router";
+import { Typography } from "antd";
 import { useSelector } from "react-redux";
 import { ResultItem } from "../../components/ResultItem";
 import getQuestionState from "../../redux/selectors";
@@ -24,9 +25,9 @@ export const ResultsPage = (props: RouteComponentProps) => {
     <div className="results-container">
       {questions && (
         <>
-          <h1>
+          <Typography.Title level={2}>
             You scored {getResults()} / {questions.length}
-          </h1>
+          </Typography.Title>
           {questions.map((qs: Question, index: number) => (
             <ResultItem
               key={qs.question}
