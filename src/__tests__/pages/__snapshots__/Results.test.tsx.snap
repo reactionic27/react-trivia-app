@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultsPage rendering renders the component 1`] = `
+<div
+  className="results-container"
+>
+  <div
+    className="button-wrapper"
+  >
+    <Button
+      onClick={[Function]}
+      type="primary"
+    >
+      PLAY AGAIN
+    </Button>
+  </div>
+</div>
+`;

@@ -14,10 +14,10 @@ export const QuestionCard = ({ title, handleClick }: Props) => (
       <div dangerouslySetInnerHTML={{ __html: title }}></div>
     </Typography.Title>
     <Button className={cx("btn-answer")} onClick={() => handleClick("True")}>
-      TRUE
+      True
     </Button>
     <Button className={cx("btn-answer")} onClick={() => handleClick("False")}>
-      FALSE
+      False
     </Button>
   </div>
 );

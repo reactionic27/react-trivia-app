@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionCard rendering renders the component 1`] = `
+<div
+  className="question-card"
+>
+  <Title
+    level={3}
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Test Title",
+        }
+      }
+    />
+  </Title>
+  <Button
+    className="btn-answer"
+    onClick={[Function]}
+  >
+    True
+  </Button>
+  <Button
+    className="btn-answer"
+    onClick={[Function]}
+  >
+    False
+  </Button>
+</div>
+`;

@@ -11,8 +11,11 @@ exports[`ResultItem rendering renders the component 1`] = `
   </div>
   <div
     className="question"
-  >
-    In &quot;The Sims&quot; series, the most members in a household you can have is 8.
-  </div>
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "In &quot;The Sims&quot; series, the most members in a household you can have is 8.",
+      }
+    }
+  />
 </div>
 `;

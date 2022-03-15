@@ -3,7 +3,7 @@ import { ResultItem } from "../../components/ResultItem";
 
 const mockDispatch = jest.fn();
 jest.mock("react-redux", () => ({
-  useSelector: () => ({ activities: [] }),
+  useSelector: () => ({ questions: [] }),
   useDispatch: () => mockDispatch,
 }));
 

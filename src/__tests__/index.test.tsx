@@ -4,7 +4,7 @@ import configureStore from "redux-mock-store";
 import App from "../App";
 
 describe("Index", () => {
-  const initialState = { activities: [] };
+  const initialState = { questions: [] };
   const mockStore = configureStore();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let store: any;

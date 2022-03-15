@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionsPage rendering renders the component 1`] = `
+<div
+  className="questions-container"
+/>
+`;

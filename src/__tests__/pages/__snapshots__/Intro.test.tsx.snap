@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IntroPage rendering renders the component 1`] = `
+<div
+  className="intro-container"
+>
+  <Title
+    level={2}
+  >
+    Welcome to the Trivia Challenge
+  </Title>
+  <Title
+    level={3}
+  >
+    You will be presented with 10 True or False questions.
+  </Title>
+  <Title
+    level={4}
+  >
+    Can you score 100%?
+  </Title>
+  <Link
+    to="/questions"
+  >
+    BEGIN
+  </Link>
+</div>
+`;
