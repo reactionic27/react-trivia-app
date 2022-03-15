@@ -3,10 +3,9 @@ import {
   GET_QUESTIONS_SUCCESS,
   GET_QUESTIONS_FAILURE,
   POST_ANSWER_REQUEST,
-  POST_ANSWER_SUCCESS,
-  POST_ANSWER_FAILURE,
+  CLEAR_DATA_REQUEST,
 } from "../constants";
-import { QuestionState } from "../../types";
+import { QuestionState } from "@types";
 
 const initialState: QuestionState = {
   questions: [],
@@ -30,19 +29,18 @@ export default (state = initialState, action: any): any => {
         ...state,
       };
     case POST_ANSWER_REQUEST:
-      return {
-        ...state,
-      };
-    case POST_ANSWER_SUCCESS:
       const { answer } = action.payload;
       return {
         ...state,
         answers: [...state.answers, answer],
       };
-    case POST_ANSWER_FAILURE:
+    case CLEAR_DATA_REQUEST:
       return {
         ...state,
+        questions: [],
+        answers: [],
       };
+
     default:
       return state;
   }

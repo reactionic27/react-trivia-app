@@ -2,7 +2,5 @@
 export const GET_QUESTIONS_REQUEST = "question/GET_QUESTIONS_REQUEST";
 export const GET_QUESTIONS_SUCCESS = "question/GET_QUESTIONS_SUCCESS";
 export const GET_QUESTIONS_FAILURE = "question/GET_QUESTIONS_FAILURE";
-
 export const POST_ANSWER_REQUEST = "question/POST_ANSWER_REQUEST";
-export const POST_ANSWER_SUCCESS = "question/POST_ANSWER_SUCCESS";
-export const POST_ANSWER_FAILURE = "question/POST_ANSWER_FAILURE";
+export const CLEAR_DATA_REQUEST = "question/CLEAR_DATA_REQUEST";

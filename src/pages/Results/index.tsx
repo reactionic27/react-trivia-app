@@ -1,14 +1,16 @@
-import { Link, RouteComponentProps } from "@reach/router";
-import { Typography } from "antd";
-import { useSelector } from "react-redux";
-import { ResultItem } from "../../components/ResultItem";
-import getQuestionState from "../../redux/selectors";
-import { Question } from "../../types";
+import { navigate, RouteComponentProps } from "@reach/router";
+import { Button, Typography } from "antd";
+import { useDispatch, useSelector } from "react-redux";
+import { ResultItem } from "@components/ResultItem";
+import { CLEAR_DATA_REQUEST } from "@redux/constants";
+import getQuestionState from "@redux/selectors";
+import { Question } from "@types";
 
 import "./style.css";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const ResultsPage = (props: RouteComponentProps) => {
+  const dispatch = useDispatch();
   const { questions, answers } = useSelector(getQuestionState);
 
   const getResults = () => {
@@ -19,6 +21,11 @@ export const ResultsPage = (props: RouteComponentProps) => {
       }
     });
     return count;
+  };
+
+  const replay = () => {
+    dispatch({ type: CLEAR_DATA_REQUEST });
+    navigate("/");
   };
 
   return (
@@ -38,9 +45,9 @@ export const ResultsPage = (props: RouteComponentProps) => {
         </>
       )}
       <div className="button-wrapper">
-        <Link to="/" className="btn-play">
+        <Button type="primary" onClick={replay}>
           PLAY AGAIN
-        </Link>
+        </Button>
       </div>
     </div>
   );
