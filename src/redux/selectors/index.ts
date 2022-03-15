@@ -1,4 +1,4 @@
-import { QuestionState, RootState } from "@types";
+import { QuestionState, RootState } from "../../types";
 
 const getQuestionState = (state: RootState): QuestionState =>
   state.questionState;

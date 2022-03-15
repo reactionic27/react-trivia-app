@@ -2,9 +2,12 @@ import { navigate, RouteComponentProps } from "@reach/router";
 import { Typography } from "antd";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { QuestionCard } from "@components/Card";
-import { GET_QUESTIONS_REQUEST, POST_ANSWER_REQUEST } from "@redux/constants";
-import getQuestionState from "@redux/selectors";
+import { QuestionCard } from "../../components/Card";
+import {
+  GET_QUESTIONS_REQUEST,
+  POST_ANSWER_REQUEST,
+} from "../../redux/constants";
+import getQuestionState from "../../redux/selectors";
 
 import "./style.css";
 

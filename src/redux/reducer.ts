@@ -1,5 +1,5 @@
-import { RootState } from "@types";
 import { combineReducers, Reducer } from "redux";
+import { RootState } from "../types";
 
 import questionReducer from "./reducer/questions";
 

@@ -1,3 +1,4 @@
+import { QuestionState } from "../../types";
 import {
   GET_QUESTIONS_REQUEST,
   GET_QUESTIONS_SUCCESS,
@@ -5,7 +6,6 @@ import {
   POST_ANSWER_REQUEST,
   CLEAR_DATA_REQUEST,
 } from "../constants";
-import { QuestionState } from "@types";
 
 const initialState: QuestionState = {
   questions: [],

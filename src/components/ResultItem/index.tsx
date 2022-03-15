@@ -1,5 +1,5 @@
 import cx from "classnames";
-import { Question } from "@types";
+import { Question } from "../../types";
 
 import "./style.css";
 

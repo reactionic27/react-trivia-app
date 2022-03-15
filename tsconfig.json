@@ -14,13 +14,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@types": ["src/types.ts"],
-      "@redux/*": ["src/redux/*"]
-    }
+    "jsx": "react-jsx"
   },
   "include": ["src", "config/jest/setupTests.ts"]
 }

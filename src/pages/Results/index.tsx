@@ -1,10 +1,10 @@
 import { navigate, RouteComponentProps } from "@reach/router";
 import { Button, Typography } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-import { ResultItem } from "@components/ResultItem";
-import { CLEAR_DATA_REQUEST } from "@redux/constants";
-import getQuestionState from "@redux/selectors";
-import { Question } from "@types";
+import { ResultItem } from "../../components/ResultItem";
+import { CLEAR_DATA_REQUEST } from "../../redux/constants";
+import getQuestionState from "../../redux/selectors";
+import { Question } from "../../types";
 
 import "./style.css";
 
